@@ -28,7 +28,7 @@ abstract class Personagem {
             ", vigor = " + this.vigor +
             ", resistencia = " +  this.resistencia +
             ", destreza = " + this.destreza +
-            ", dano ataque = "+ String.format("%.2f", getDanoAtaque()) +"}";
+            ", dano ataque = "+ String.format("%.2f", getDanoAtaque()) +" }";
     }
 
     public String getNome() {

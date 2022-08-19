@@ -17,9 +17,7 @@ abstract class Personagem {
         this.destreza = destreza;
     }
 
-    public double getDanoAtaque(){
-        return this.forca;
-    }
+    public abstract double getDanoAtaque();
 
     @Override
     public String toString() {
@@ -31,5 +29,61 @@ abstract class Personagem {
             ", resistencia = " +  this.resistencia +
             ", destreza = " + this.destreza +
             ", dano ataque = "+ String.format("%.2f", getDanoAtaque()) +"}";
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public TipoPersonagem getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(TipoPersonagem tipo) {
+        this.tipo = tipo;
+    }
+
+    public int getInteligencia() {
+        return inteligencia;
+    }
+
+    public void setInteligencia(int inteligencia) {
+        this.inteligencia = inteligencia;
+    }
+
+    public int getForca() {
+        return forca;
+    }
+
+    public void setForca(int forca) {
+        this.forca = forca;
+    }
+
+    public int getVigor() {
+        return vigor;
+    }
+
+    public void setVigor(int vigor) {
+        this.vigor = vigor;
+    }
+
+    public int getResistencia() {
+        return resistencia;
+    }
+
+    public void setResistencia(int resistencia) {
+        this.resistencia = resistencia;
+    }
+
+    public int getDestreza() {
+        return destreza;
+    }
+
+    public void setDestreza(int destreza) {
+        this.destreza = destreza;
     }
 }

@@ -1,5 +1,9 @@
+import java.util.Locale;
+
 public class Program {
     public static void main(String[] args) {
+        final var locale = new Locale("pt", "BR");
+        Locale.setDefault(locale);
         Impressao impressao1 = ImpressaoFactory.createImpressao(TamanhoImpressao.A3, 50, 10, true);
         Impressao impressao2 = ImpressaoFactory.createImpressao(TamanhoImpressao.A4, 50, 10, true);
         Impressao impressao3 = ImpressaoFactory.createImpressao(TamanhoImpressao.A3, 23, 7, false);
